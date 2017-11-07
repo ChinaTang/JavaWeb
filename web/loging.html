@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form name="loginform" method="post" action="">
+<form name="loginform" method="post" action="dispatcher">
     <table>
         <tr>
             <td><input type="text" name="username"></td>
@@ -17,6 +17,10 @@
     </table>
 
     <input type="submit" name="submit" value="submit">
+</form>
+
+<form name="showInfo" method="get" action="/requestinfo">
+    <input type="submit" name="submit" value="showInfo">
 </form>
 
 </body>

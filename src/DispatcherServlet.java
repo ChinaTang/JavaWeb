@@ -3,6 +3,9 @@
 import javax.servlet.*;
 import java.io.IOException;
 
+/**
+ *
+ */
 public class DispatcherServlet extends GenericServlet{
 
     private String userName;
@@ -21,6 +24,10 @@ public class DispatcherServlet extends GenericServlet{
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         userName = servletRequest.getParameter("username");
         password = servletRequest.getParameter("password");
+
+        if(userName == null || userName.equals("")){
+        }
+
         servletRequest.setAttribute(USE, userName);
         servletRequest.setAttribute(PASS, password);
 
