@@ -32,9 +32,19 @@
         <servlet-name>requestinfo</servlet-name>
         <url-pattern>/requestinfo</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>counterServlet</servlet-name>
+        <servlet-class>counter.CounterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>counterServlet</servlet-name>
+        <url-pattern>/counterServlet</url-pattern>
+    </servlet-mapping>
     
     <welcome-file-list>
-        <welcome-file>loging.html</welcome-file>
+        <welcome-file>init.html</welcome-file>
     </welcome-file-list>
 
 

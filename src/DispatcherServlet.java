@@ -35,4 +35,9 @@ public class DispatcherServlet extends GenericServlet{
         RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(tagjsp);
         requestDispatcher.forward(servletRequest, servletResponse);
     }
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+    }
 }
