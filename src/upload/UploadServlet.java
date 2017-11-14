@@ -75,6 +75,8 @@ public class UploadServlet extends HttpServlet {
         item.write(uploadedFile);
         outNet.println(fileName + "is saved.");
         outNet.println("The size of " + fileName + "is " + fileSize + "\r\n");
+        outNet.println("filePath: " + filePath);
+        outNet.println("tempPath: " + tempFilePath);
     }
 
 }
