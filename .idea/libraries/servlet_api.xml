@@ -5,6 +5,9 @@
       <root url="jar:///usr/share/tomcat8/lib/tomcat-api.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar:///usr/share/tomcat8/lib/servlet-api.jar!/" />
+      <root url="file:///usr/share/tomcat8/java" />
+    </SOURCES>
   </library>
 </component>

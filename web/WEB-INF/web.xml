@@ -44,8 +44,20 @@
     </servlet-mapping>
     
     <welcome-file-list>
-        <welcome-file>init.html</welcome-file>
+        <welcome-file>loging.html</welcome-file>
     </welcome-file-list>
 
+    <!--<listener>
+        <listener-class>counter.MyServletContextListener</listener-class>
+    </listener>-->
+
+    <servlet>
+        <servlet-name>downloadServlet</servlet-name>
+        <servlet-class>download.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
 
 </web-app>
