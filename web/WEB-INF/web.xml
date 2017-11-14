@@ -44,7 +44,7 @@
     </servlet-mapping>
     
     <welcome-file-list>
-        <welcome-file>loging.html</welcome-file>
+        <welcome-file>init.html</welcome-file>
     </welcome-file-list>
 
     <!--<listener>
@@ -59,5 +59,26 @@
         <servlet-name>downloadServlet</servlet-name>
         <url-pattern>/download</url-pattern>
     </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>uploadfile.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>upload.UploadServlet</servlet-class>
+        <init-param>
+            <param-name>filePath</param-name>
+            <param-value>store</param-value>
+        </init-param>
+        <init-param>
+            <param-name>tempFilePath</param-name>
+            <param-value>temp</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
