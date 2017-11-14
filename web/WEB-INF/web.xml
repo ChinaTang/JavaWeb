@@ -46,6 +46,9 @@
     <welcome-file-list>
         <welcome-file>init.html</welcome-file>
     </welcome-file-list>
+    <welcome-file-list>
+        <welcome-file>uploadfile.html</welcome-file>
+    </welcome-file-list>
 
     <!--<listener>
         <listener-class>counter.MyServletContextListener</listener-class>
@@ -75,10 +78,23 @@
             <param-value>temp</param-value>
         </init-param>
     </servlet>
+
+
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>upload.UploadServlet</servlet-class>
+        <init-param>
+            <param-name>filePath</param-name>
+            <param-value>store</param-value>
+        </init-param>
+        <init-param>
+            <param-name>tempFilePath</param-name>
+            <param-value>tem</param-value>
+        </init-param>
+    </servlet>
     <servlet-mapping>
-        <servlet-name>uploadServlet</servlet-name>
+        <servlet-name>upload</servlet-name>
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
-
 
 </web-app>
