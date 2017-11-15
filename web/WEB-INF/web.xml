@@ -42,13 +42,6 @@
         <servlet-name>counterServlet</servlet-name>
         <url-pattern>/counterServlet</url-pattern>
     </servlet-mapping>
-    
-    <welcome-file-list>
-        <welcome-file>init.html</welcome-file>
-    </welcome-file-list>
-    <welcome-file-list>
-        <welcome-file>uploadfile.html</welcome-file>
-    </welcome-file-list>
 
     <!--<listener>
         <listener-class>counter.MyServletContextListener</listener-class>
@@ -62,23 +55,6 @@
         <servlet-name>downloadServlet</servlet-name>
         <url-pattern>/download</url-pattern>
     </servlet-mapping>
-    <welcome-file-list>
-        <welcome-file>uploadfile.html</welcome-file>
-    </welcome-file-list>
-
-    <servlet>
-        <servlet-name>uploadServlet</servlet-name>
-        <servlet-class>upload.UploadServlet</servlet-class>
-        <init-param>
-            <param-name>filePath</param-name>
-            <param-value>store</param-value>
-        </init-param>
-        <init-param>
-            <param-name>tempFilePath</param-name>
-            <param-value>temp</param-value>
-        </init-param>
-    </servlet>
-
 
     <servlet>
         <servlet-name>upload</servlet-name>
@@ -96,5 +72,86 @@
         <servlet-name>upload</servlet-name>
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>imageServlet</servlet-name>
+        <servlet-class>image.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>imageServlet</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>cookieservlet</servlet-name>
+        <servlet-class>cookie.CookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookieservlet</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>cookieuser</servlet-name>
+        <servlet-class>cookie.CookieUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookieuser</servlet-name>
+        <url-pattern>/cookieuser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dirservlet</servlet-name>
+        <servlet-class>workspacedir.DirTesterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dirservlet</servlet-name>
+        <url-pattern>/dir</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>checkServlet</servlet-name>
+        <servlet-class>forward.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkServlet</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>output</servlet-name>
+        <servlet-class>forward.OutputServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>output</servlet-name>
+        <url-pattern>/output</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>include.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern>/mainServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>greetServlet</servlet-name>
+        <servlet-class>include.GreetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>greetServlet</servlet-name>
+        <url-pattern>/greet</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>init.html</welcome-file>
+    </welcome-file-list>
+    <welcome-file-list>
+        <welcome-file>uploadfile.html</welcome-file>
+    </welcome-file-list>
+    <welcome-file-list>
+        <welcome-file>imageout.html</welcome-file>
+    </welcome-file-list>
 
 </web-app>
