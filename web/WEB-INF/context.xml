@@ -1,0 +1,8 @@
+<Context reloadable="true">
+    <Resource name="jdbc/BookDb" auth="Container"
+    type="javax.sql.DataSource"
+    maxActive="100" maxIdle="30" maxWait="10000"
+    username="root" password="1234"
+    driverClassName="org.mariadb.jdbc.Driver"
+    url="jdbc:mariadb://localhost:3306/BookDb"/>
+</Context>
